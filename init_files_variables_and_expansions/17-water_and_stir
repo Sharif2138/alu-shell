@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=7; $(echo "ibase=5; $WATER" | bc) + $(echo "ibase=6; $STIR" | bc)" | bc
+WATER_DEC=$((5#$WATER)); STIR_DEC=$((6#$STIR)); RESULT=$((WATER_DEC + STIR_DEC)); printf "%o\n" "$RESULT" | tr '01234567' '0123456'
