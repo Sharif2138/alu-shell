@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# pkill using
+pkill -f 7-highlander -9
